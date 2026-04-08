@@ -58,7 +58,7 @@ const HeroSection = () => {
 
                 <div className="relative w-full h-full bg-gray-800 border-2 border-gray-700 rounded-full flex items-center justify-center shadow-2xl overflow-hidden z-10">
                     <img
-                        src="../../public/images/noeh.jpg"
+                        src="/images/noeh.jpg"
                         alt="pic nako"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
