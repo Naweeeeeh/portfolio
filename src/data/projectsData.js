@@ -5,7 +5,7 @@ export const projects = [
         id: 'hexawork',
         category: 'Web3 / dApp',
         title: 'HexaWork',
-        shortDesc: 'Champion dApp for secure freelance escrow transactions.',
+        shortDesc: 'A dApp for secure freelance escrow transactions.',
         techStack: ['Solidity', 'Polkadot', 'Blockchain', 'Smart Contracts'],
         images: [
             '/images/hexwork.jpg',
