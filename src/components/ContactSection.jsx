@@ -20,7 +20,7 @@ const ContactSection = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-xl text-gray-400 mb-10 font-light"
             >
-              I'd love to hear from you.
+                I'd love to hear from you.
             </motion.p>
 
             <motion.div
@@ -29,7 +29,8 @@ const ContactSection = () => {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.4 }}
             >
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+                {/* Added flex-wrap here to gracefully handle 3 buttons on varying screen sizes */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10 flex-wrap">
 
                     <a
                         href="mailto:noehboiser221@gmail.com"
@@ -46,6 +47,17 @@ const ContactSection = () => {
                     >
                         LinkedIn
                     </a>
+
+                    {/* New Resume Button */}
+                    <a
+                        href="/images/NoehArbeeBoiser_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent border-2 border-purple-500 text-purple-400 font-bold text-lg py-4 px-12 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] hover:-translate-y-1"
+                    >
+                        View Resume
+                    </a>
+
                 </div>
             </motion.div>
         </div>
